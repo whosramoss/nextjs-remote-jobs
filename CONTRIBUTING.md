@@ -1,6 +1,6 @@
-# Contributing to nt3
+# Contributing to nextjs-remote-jobs
 
-> Welcome to `nt3`
+> Welcome to `nextjs-remote-jobs`
 
 If you intend to contribute to this project, please read following text carefully to avoid bad misunderstandings and wasted work.
 
@@ -17,7 +17,7 @@ Contributions **are appreciated** but just under correct terms.
 
 ## Introduction
 
-Please start by reading our [license](https://github.com/whosramoss/nt3/blob/master/LICENSE) and [code-of-conduct](https://github.com/whosramoss/nt3/blob/master/CODE_OF_CONDUCT.md). If you don't agree with them, this isn't your project.
+Please start by reading our [license](https://github.com/whosramoss/nextjs-remote-jobs/blob/master/LICENSE) and [code-of-conduct](https://github.com/whosramoss/nextjs-remote-jobs/blob/master/CODE_OF_CONDUCT.md). If you don't agree with them, this isn't your project.
 
 ## Expectations
 
@@ -45,7 +45,7 @@ Please start by reading our [license](https://github.com/whosramoss/nt3/blob/mas
 
 ## How to contribute
 
-Main contribution ways are to [open issues](https://github.com/whosramoss/nt3/issues) and [fork with later pull requests](https://github.com/whosramoss/nt3/network/members). Furthermore, you can discuss issues, review **PRs** or mention this project in _public/chat_ with the community about your experience.
+Main contribution ways are to [open issues](https://github.com/whosramoss/nextjs-remote-jobs/issues) and [fork with later pull requests](https://github.com/whosramoss/nextjs-remote-jobs/network/members). Furthermore, you can discuss issues, review **PRs** or mention this project in _public/chat_ with the community about your experience.
 
 If you want to contribute with a pull request, please remember to:
 
