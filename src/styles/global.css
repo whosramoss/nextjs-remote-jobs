@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #ffffff;
+    --secondary: #f4f4f4;
+    --third: #262626;
+    --black: #161616;
+  }
+
+  .dark {
+    --primary: #161616;
+    --secondary: #262626;
+    --third: #f4f4f4;
+    --black: #ffffff;
+  }
+}
+
+@layer base {
+  html {
+    @apply font-medium;
+    font-family: Neue Montreal;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  .card-size {
+    @apply h-[308px] rounded-xl sm:h-[496px];
+  }
+  .card-mobile-text {
+    @apply text-2xl text-black md:hidden
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
