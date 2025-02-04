@@ -1,16 +1,32 @@
-"use client"
-
+import BookmarksButton from "@app/_components/BookmarksButton";
+import JobItemContent from "@app/_components/JobItemContent";
+import JobListSearch from "@app/_components/JobListSearch";
+import PaginationControls from "@app/_components/PaginationControls";
+import ResultsCount from "@app/_components/ResultsCount";
+import SortingControls from "@app/_components/SortingControls";
 import React from "react";
-import { useLanguageRedirect } from "@hooks/useLanguageRedirect";
-
-/// For static builds, page redirection will not work through middleware.
-/// In such cases, it's necessary to create a dedicated page for 
-/// redirection and implement the redirection logic through a hook. 
-/// If your build is not static, this page is not necessary.
-
+import { Toaster } from "react-hot-toast";
 
 export default function Page() {
-  useLanguageRedirect()
-  return (<React.Fragment />)
+
+  return (
+    <React.Fragment>
+      <div className="background" />
+      <div className="space" />
+      <div className="container ">
+        <div className="sidebar">
+          <div className="sidebar__top">
+            <ResultsCount />
+            <SortingControls />
+          </div>
+          <JobListSearch />
+          <PaginationControls />
+        </div>
+        <JobItemContent />
+      </div>
+      <div className="space" />
+      <Toaster position="top-right" />
+    </React.Fragment>
+  )
 }
 
