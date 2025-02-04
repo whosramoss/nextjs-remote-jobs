@@ -1,14 +1,22 @@
-import { ExampleProvider } from "@providers/ExampleProvider";
+import ActiveIdContextProvider from "@providers/ActiveIdContextProvider";
+import BookmarksContextProvider from "@providers/BookmarksContextProvider";
+import JobItemsContextProvider from "@providers/JobItemsContextProvider";
 import { CustomQueryProvider } from "@providers/QueryProvider";
-import { ThemeProvider } from "@providers/ThemeProvider";
-import { CommonsProps } from "@utils/utils";
+import SearchTextContextProvider from "@providers/SearchTextContextProvider";
+import { ICommons } from "@utils/utils";
 
-export default async function AppProvider({ children }: CommonsProps) {
+export default async function AppProvider({ children }: ICommons) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
-      <CustomQueryProvider>
-        <ExampleProvider>{children}</ExampleProvider>
-      </CustomQueryProvider>
-    </ThemeProvider>
+    <CustomQueryProvider>
+      <BookmarksContextProvider>
+        <ActiveIdContextProvider>
+          <SearchTextContextProvider>
+            <JobItemsContextProvider>
+              {children}
+            </JobItemsContextProvider>
+          </SearchTextContextProvider>
+        </ActiveIdContextProvider>
+      </BookmarksContextProvider>
+    </CustomQueryProvider>
   );
 }
